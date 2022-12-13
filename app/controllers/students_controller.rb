@@ -5,4 +5,14 @@ class StudentsController < ApplicationController
     render json: students
   end
 
+  def show
+    student = Student.first
+    render json: student
+  end
+
+  def second
+    student = Student.second
+    render json: student
+  end
+
 end
